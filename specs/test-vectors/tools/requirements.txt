@@ -1,0 +1,5 @@
+# Pinned to the versions that produced the committed vectors, so the CI
+# byte-for-byte determinism check is reproducible.
+cbor2==6.1.2
+cryptography==49.0.0
+ecdsa==0.19.2

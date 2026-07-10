@@ -1,0 +1,12 @@
+{
+  "description": "Valid ES256K receipt, low-s (R1-R5).",
+  "inputs": {
+    "receipt": "d2845827a201382e0458205b6b92b37b765963ab61d52a3171a54da33778c13118108f918e78cd2a8e3c15a0587aa4016d4243462d524543454950542f31025820aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa03a301766469643a7765623a7261696c2d702e6578616d706c65025821034f355bdcb7cc0af728ef3cceb9615d90684bb5b2ca5f859ab0f0b704075871aa03382e041a693a5d185840f0bbc44596817675769129bd0ff80cb72cc70fc730b878fc2ea38fad4eb4ea486faa2ec8be6a0dba850def21b250468f6deab65ce3204f4bd29a48b48336c51f",
+    "expected_domain": "BCF-RECEIPT/1"
+  },
+  "expected": {
+    "result": "valid",
+    "artifact_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "received_at": 1765432600
+  }
+}

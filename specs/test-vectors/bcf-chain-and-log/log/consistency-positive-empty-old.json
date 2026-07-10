@@ -1,0 +1,13 @@
+{
+  "description": "old_size 0 is trivially a prefix of size 5.",
+  "inputs": {
+    "old_size": 0,
+    "old_root": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_size": 5,
+    "new_root": "df6f43841ab2076282da5eeb68583862b81f62ee6cd07c44f49bf4a81be59488",
+    "proof": []
+  },
+  "expected": {
+    "result": "valid"
+  }
+}

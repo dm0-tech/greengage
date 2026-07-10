@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust:
+    name: Rust (fmt, clippy, test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - name: Format
+        run: cargo fmt --all -- --check
+      - name: Clippy
+        run: cargo clippy --all-targets -- -D warnings
+      - name: Test (conformance vectors)
+        run: cargo test --all
+
+  vector-determinism:
+    name: Test vectors regenerate byte-identically
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install oracle dependencies
+        run: pip install -r specs/test-vectors/tools/requirements.txt
+      - name: Regenerate and diff
+        run: |
+          python specs/test-vectors/tools/generate_bcf_core.py
+          git diff --exit-code specs/test-vectors/ \
+            || (echo "::error::test vectors are not byte-identical to a fresh generation" && exit 1)

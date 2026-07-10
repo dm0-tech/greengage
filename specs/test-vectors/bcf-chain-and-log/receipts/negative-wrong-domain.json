@@ -1,0 +1,12 @@
+{
+  "description": "Receipt domain is not BCF-RECEIPT/1 (R3).",
+  "inputs": {
+    "receipt": "d2845826a20127045820506ef1879d748ce0713b0dd01da32ad2a4b1ce97b5a852ff18800c1e52982376a0586fa4016558595a2f31025820aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa03a301756469643a7765623a7073702d612e6578616d706c6502582043a72e714401762df66b68c26dfbdf2682aaec9f2474eca4613e424a0fbafd3c0327041a693a5d185840756b26ecf4ccdb749d635a30bf18f7154fa4409ce70c9eb0af721fe9faa6a0ca86d5e7ee3ad6ea574842469654f875e50937a65bc4f678f000be28046281a10a",
+    "expected_domain": "BCF-RECEIPT/1"
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_RECEIPT_DOMAIN"
+  },
+  "attack": "Cross-confusion: a receipt under another domain is replayed as a BCF-RECEIPT acknowledgement."
+}

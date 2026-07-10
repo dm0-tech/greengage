@@ -1,0 +1,17 @@
+[package]
+name = "bcf-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Reference implementation of the BCF core envelope, verifier, and chain (greengage Epic 1)."
+
+[dependencies]
+ed25519-dalek = { workspace = true }
+k256 = { workspace = true }
+sha2 = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+hex = { workspace = true }

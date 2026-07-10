@@ -1,0 +1,15 @@
+{
+  "description": "Equal size (5, 5) but different roots; the empty proof cannot bridge them (\u00a76.3.2 boundary).",
+  "inputs": {
+    "old_size": 5,
+    "old_root": "df6f43841ab2076282da5eeb68583862b81f62ee6cd07c44f49bf4a81be59488",
+    "new_size": 5,
+    "new_root": "d9cd4474741c4e688ee0291c53389c1c6eba7ef0b673a4a6bb17648dab47109f",
+    "proof": []
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_LOG_CONSISTENCY"
+  },
+  "attack": "Same-epoch divergence: two size-5 logs with different roots are not consistent; this is the signal split-view detection rests on."
+}

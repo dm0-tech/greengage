@@ -1,0 +1,12 @@
+{
+  "description": "Protected kid is B's, but recipient in the body is A (R4).",
+  "inputs": {
+    "receipt": "d2845826a20127045820fdf72a088f18f7399e8c52bce448441501f759a595a86980e5d9a422a01e5d55a05877a4016d4243462d524543454950542f31025820aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa03a301756469643a7765623a7073702d612e6578616d706c6502582043a72e714401762df66b68c26dfbdf2682aaec9f2474eca4613e424a0fbafd3c0327041a693a5d185840701af99b6a8369ff00d6d930ad5965cfaa651a4b2aeab05a5d25a5864891839e1a7b8a88eefe0797addf37bd41fbeb6e2f031522e563028b7226dea1cad21f08",
+    "expected_domain": "BCF-RECEIPT/1"
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_RECEIPT_STRUCTURE"
+  },
+  "attack": "Header/body signer disagreement: the attributing key does not match the body's named recipient."
+}

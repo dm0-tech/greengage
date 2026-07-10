@@ -1,0 +1,19 @@
+{
+  "description": "A path valid for epoch 2 presented with leaf_index 1.",
+  "inputs": {
+    "leaf": "49840367d990d6242f590e1bf8b8323e7bbb3d8fbf1dcbbdb9dc63216e013c89",
+    "proof": [
+      "3004f488828046c9bfa5095132b62d59c0e0a8485d478371739b35ac966cc143",
+      "75674dcfcfd8ef174f28a7a473f625112a106cec4313d982ddf2edd60884a15f",
+      "9cea7068c3fa679619bec9b62e588d2c06e8770d24568c5c9b540d41b30b2856"
+    ],
+    "leaf_index": 1,
+    "tree_size": 5,
+    "root": "df6f43841ab2076282da5eeb68583862b81f62ee6cd07c44f49bf4a81be59488"
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_HEAD_INCLUSION"
+  },
+  "attack": "Position forgery: a head claimed at the wrong epoch must not verify."
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Inclusion proof presented for a leaf that is not in the committed set.",
+  "inputs": {
+    "leaf": "7777777777777777777777777777777777777777777777777777777777777777",
+    "proof": [
+      "a23e5f60b577afd1d5d31a3efa2c95b1586648dbb4f0aa254d3de36cf3966d85",
+      "96cfe136315282442cd0133b934dd99622a510c075930239725ced808ce7dfa0",
+      "c28c5d7c9d7221eea6711ea32b956266a63406ce470fc5a8a4265465fa87d821"
+    ],
+    "leaf_index": 2,
+    "tree_size": 5,
+    "root": "48527bea1436c4172faaa24d1cf100c5a239e962306469887c704b24a28544ca"
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_HEAD_INCLUSION"
+  },
+  "attack": "Forged membership: claiming an artifact was committed when the root does not cover it."
+}

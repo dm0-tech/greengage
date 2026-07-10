@@ -1,0 +1,12 @@
+{
+  "description": "Receipt body carries an unknown key 6 (R2).",
+  "inputs": {
+    "receipt": "d2845826a20127045820506ef1879d748ce0713b0dd01da32ad2a4b1ce97b5a852ff18800c1e52982376a05886a5016d4243462d524543454950542f31025820aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa03a301756469643a7765623a7073702d612e6578616d706c6502582043a72e714401762df66b68c26dfbdf2682aaec9f2474eca4613e424a0fbafd3c0327041a693a5d18066d707265762d736d7567676c656458409711783cd94e55bd2879bd7f06c602b18fab3f90f34259c04c103e8b1a7452c1335a4a703659b64be8d2b31c7af5ee9fa2308b386d23c5f3d34838287f78cf03",
+    "expected_domain": "BCF-RECEIPT/1"
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_RECEIPT_STRUCTURE"
+  },
+  "attack": "Unagreed-field smuggling: content rides in the signed receipt body that the format does not define (a receipt has no prev)."
+}

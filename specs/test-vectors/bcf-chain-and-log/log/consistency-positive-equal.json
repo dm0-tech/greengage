@@ -1,0 +1,13 @@
+{
+  "description": "Equal size, equal root (trivial).",
+  "inputs": {
+    "old_size": 5,
+    "old_root": "df6f43841ab2076282da5eeb68583862b81f62ee6cd07c44f49bf4a81be59488",
+    "new_size": 5,
+    "new_root": "df6f43841ab2076282da5eeb68583862b81f62ee6cd07c44f49bf4a81be59488",
+    "proof": []
+  },
+  "expected": {
+    "result": "valid"
+  }
+}

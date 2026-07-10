@@ -1,0 +1,20 @@
+{
+  "description": "A proof node is corrupted.",
+  "inputs": {
+    "old_size": 3,
+    "old_root": "6710ab198f943d4ca6e58e6f4137e3de0eb14cc2e6c473714b8d1ea82f17f892",
+    "new_size": 5,
+    "new_root": "df6f43841ab2076282da5eeb68583862b81f62ee6cd07c44f49bf4a81be59488",
+    "proof": [
+      "591a7fdbb00a37e6bfc16d20fc4477122231f8f13187a65630e879b68ddc9806",
+      "3105f589838147c8bea4085033b72c58c1e1a9495c468270729a34ad976dc042",
+      "74664cceced9ee164e29a6a572f724102b116ded4212d883dcf3ecd70985a05e",
+      "9deb7169c2fb669718bfc8b72f598c2d07e9760c25578d5d9a550c40b20a2957"
+    ]
+  },
+  "expected": {
+    "result": "error",
+    "error": "E_LOG_CONSISTENCY"
+  },
+  "attack": "History rewrite: a tampered consistency proof must not bridge an old root to an unrelated new root."
+}

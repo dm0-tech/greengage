@@ -1,0 +1,13 @@
+{
+  "description": "Inclusion in a single-leaf tree: empty path, root = leaf hash.",
+  "inputs": {
+    "leaf": "2222222222222222222222222222222222222222222222222222222222222222",
+    "proof": [],
+    "leaf_index": 0,
+    "tree_size": 1,
+    "root": "bc6f27de60abf5319d16ff4c98fe3c42022c84f6a7a2b207c8df19b0ec3d8d58"
+  },
+  "expected": {
+    "result": "valid"
+  }
+}

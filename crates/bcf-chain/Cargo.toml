@@ -1,0 +1,15 @@
+[package]
+name = "bcf-chain"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "BCF chain verification and the detect-mode log: receipts and Merkle chain-heads (greengage Epic 2)."
+
+[dependencies]
+bcf-core = { path = "../bcf-core" }
+sha2 = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+hex = { workspace = true }

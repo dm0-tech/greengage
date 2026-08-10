@@ -1,6 +1,6 @@
 # Test Vectors
 
-These vectors are the conformance ground truth for the spec suite. An implementation conforms to a specification only if it passes that specification's vectors. The Rust crates under `crates/` have no authority beyond passing them.
+These vectors are the conformance ground truth for the spec suite. An implementation conforms to a specification if and only if it passes that specification's vectors. The Rust crates under `crates/` have no authority beyond passing them.
 
 ## Status
 

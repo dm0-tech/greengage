@@ -2,7 +2,7 @@
 
 *Co-signed agreements you can verify offline.*
 
-greengage is the **agreement layer**: a small format for co-signed, hash-chained claims. Two or more identified parties sign a statement. The result is a self-contained artifact that links to the claim before it and can be verified offline.
+greengage is the **agreement layer**: a small format for co-signed, hash-chained claims. Two or more identified parties sign a statement. The result is a self-contained artifact that links to its predecessor claims and can be verified offline.
 
 Parties can add stronger evidence when they need it: signed receipts, published chain-heads, and a witnessed commit log. These measures do not prevent bad behavior. They let a verifier prove it and identify who was responsible.
 
@@ -28,7 +28,7 @@ greengage separates these problems because consistency and control already have 
 
 - **Consistency** is what Certificate Transparency solved. RFC 6962 Merkle logs and consistency proofs have run at internet scale since 2013. Independent witnesses now support systems such as Sigstore, Sigsum, and the transparency.dev network. greengage applies this machinery to bilateral claims instead of certificates.
 - **Control** is what eVaults and electronic-note registries solved. For two decades, these systems have held court-accepted records that can be transferred exactly once. UCC Article 12 extends this lineage through "controllable electronic records." greengage does not compete with the vault. It makes the record inside the vault independently verifiable.
-- **Agreement** still lacks a standard. Existing attestation formats let one party assert, attest, or vouch for something. greengage gives identified parties a small, portable format for co-signing an evolving claim with a tamper-evident history.
+- **Agreement** still lacks a small, portable standard. Existing attestation formats can carry several signatures, but one party remains the asserter: a CA asserts, a builder attests, or a platform vouches. greengage gives identified parties a format for co-signing an evolving claim with a tamper-evident history.
 
 Transparency logs handle consistency. Control registries handle uniqueness. Existing rails handle settlement. greengage handles agreement. A blockchain is one possible checkpoint, used when a deployment needs it.
 

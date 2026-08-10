@@ -1,10 +1,10 @@
 # Test Vectors
 
-The conformance ground truth for the spec suite. An implementation conforms to a spec if and only if it passes that spec's vectors; the Rust crates under `crates/` claim no authority beyond passing them.
+These vectors are the conformance ground truth for the spec suite. An implementation conforms to a specification only if it passes that specification's vectors. The Rust crates under `crates/` have no authority beyond passing them.
 
 ## Status
 
-Empty at kickoff. Vectors land phase by phase with their specs (`IMPLEMENTATION_PLAN.md` §4); a spec is not *frozen* until its vector set exists and is cross-checked.
+Vectors land with their specifications, phase by phase (`IMPLEMENTATION_PLAN.md` §4). The `bcf-core/` and `bcf-chain-and-log/` sets are complete for their frozen sections. A specification is not *frozen* until its vector set exists and has been cross-checked.
 
 ## Layout (one directory per spec, populated in its phase)
 

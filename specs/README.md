@@ -1,10 +1,12 @@
 # Specification Suite
 
-This directory is the **canonical artifact** of the project. The Rust crates under `crates/` are a reference implementation of these documents; where they disagree, the disagreement is a bug to be resolved explicitly (see `IMPLEMENTATION_PLAN.md` §7).
+This directory is the project's **canonical artifact**. The Rust crates under `crates/` implement these specifications. If the code and a specification disagree, we treat the disagreement as a bug and resolve it explicitly (see `IMPLEMENTATION_PLAN.md` §7).
 
 ## Status
 
-Documents are drafted phase by phase per `IMPLEMENTATION_PLAN.md` §4. A spec is *frozen* for a phase when its MUSTs each have at least one positive and one negative test vector in `test-vectors/`. Current state: `bcf-core.md` and `bcf-chain-and-log.md` are frozen through the witnessed log (Epics 1–3); `session-atomicity.md` and the TGS documents are stubs (scope + vector plan). Per-document status lines are authoritative; review provenance is in the top-level `PROVENANCE.md`.
+We draft documents phase by phase under `IMPLEMENTATION_PLAN.md` §4. A specification is *frozen* for a phase when each MUST has at least one positive and one negative test vector.
+
+`bcf-core.md` and `bcf-chain-and-log.md` are frozen through the witnessed log (Epics 1–3). `session-atomicity.md` and the TGS documents contain only their scope and vector plans. The status line in each document is authoritative. See `PROVENANCE.md` for the review record.
 
 ## Suite layout and dependency order
 
@@ -27,4 +29,4 @@ Documents are drafted phase by phase per `IMPLEMENTATION_PLAN.md` §4. A spec is
 
 ## Design authority
 
-These specs consolidate the S1 research programme in the `damson` repo (see `IMPLEMENTATION_PLAN.md` for the corpus map). The concept documents `damson:docs/BILATERAL_COMMITMENT_FORMAT.md` and `damson:docs/proposals/TRANSACTION_GATEWAY_SPECIFICATION.md` are inputs; once `bcf-core.md` and `tgs.md` are frozen, **this suite supersedes them**.
+These specifications consolidate the S1 research programme in the `damson` repository. See `IMPLEMENTATION_PLAN.md` for the corpus map. The concept documents `damson:docs/BILATERAL_COMMITMENT_FORMAT.md` and `damson:docs/proposals/TRANSACTION_GATEWAY_SPECIFICATION.md` are inputs. Once `bcf-core.md` and `tgs.md` are frozen, **this suite supersedes them**.
